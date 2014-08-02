@@ -35,7 +35,7 @@ Add a component in your html page like that:
 
     <dp-title 
         source="data/header.md" 
-        label="Daily-Planet" 
+        label="DailyPlanet" 
         sublabel="A little static CMS with #ES6">
     </dp-title>
 
