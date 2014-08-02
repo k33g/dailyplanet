@@ -1,0 +1,4 @@
+[
+  {"_id":"intro", "label":"What is DailyPlanet?", "url":"pages/intro", "source":"data/intro.md"},
+  {"_id":"details", "label":"How To?", "url":"pages/details", "source":"data/details.md"}
+]

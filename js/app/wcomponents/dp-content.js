@@ -12,11 +12,14 @@ Polymer("dp-content", {
     */
 
     var loadContent = (source) => {
+
       new achilles.Request(source).get().then((data) => {
         this.$.content.innerHTML = this.converter.makeHtml(data);
 
         this.$.content.find("pre").all().forEach((block) => {
           hljs.highlightBlock(block);
+        }).catch((error) => {
+          console.log("error", error)
         });
       });
     }
@@ -26,6 +29,7 @@ Polymer("dp-content", {
     } else {
 
       var contents = new Contents();
+
       contents.fetch().then(() => {
         var source = contents.filter((content) => {
           return content.get("location") == this.location;
@@ -33,6 +37,8 @@ Polymer("dp-content", {
 
         loadContent(source);
 
+      }).catch((error) => {
+        console.log("error contents collection", error)
       });
     }
 

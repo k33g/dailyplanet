@@ -40,3 +40,48 @@ Add a component in your html page like that:
     </dp-title>
 
 *Remark: `source` attribute isn't mandatory. You can use it to add content under the title.*
+
+##Use web component `dp-pages-router`
+
+Add a component in your html page like that:
+
+    <dp-pages-router></dp-pages-router>
+
+Then define pages in `data/pages.json`:
+
+    [
+      {
+        "_id":"intro", 
+        "label":"What is DailyPlanet?", 
+        "url":"pages/intro", 
+        "source":"data/intro.md"
+      },
+      {
+        "_id":"details", 
+        "label":"How To?", 
+        "url":"pages/details", 
+        "source":"data/details.md"
+      }
+    ]
+
+`dp-pages-router` component will create a toc:
+
+    <ul>
+      <li><a href="#pages/intro">What is DailyPlanet?</a></li>
+      <li><a href="#pages/details">How To?</a></li>
+    </ul>
+
+and "fire" a `core-signal`:
+
+    this.asyncFire('core-signal', {
+        name: "pageclicked", 
+        data: pageToDisplay
+    });
+    /*pageToDisplay is a Page Model*/
+
+and `dp-page` component is notified an then load and display the content page
+
+    pageclickedSignal (e, pageToDisplay, sender) {
+        this.loadContent(pageToDisplay.source);
+    }
+

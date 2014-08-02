@@ -1,0 +1,22 @@
+<link rel="import" href="../../vendors/polymer/polymer.html">
+
+<polymer-element name="dp-pages-router">
+
+  <template>
+    <link rel="stylesheet" href="../../../css/dailyplanet.css">
+    <h4>Table Of Contents</h4>
+    <hr>
+    <ul>
+      <template repeat="{{pages}}">
+        <li><a href="#{{url}}">{{label}}</a></li>
+      </template>
+    </ul>
+    <hr>
+  </template>
+
+  <script>
+    /* Load ES6 script */
+    System.import('js/app/wcomponents/dp-pages-router');
+  </script>
+
+</polymer-element>

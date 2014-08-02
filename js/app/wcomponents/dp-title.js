@@ -26,4 +26,5 @@ Polymer("dp-title", {
     }
 
   }
+
 });

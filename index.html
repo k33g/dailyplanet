@@ -21,8 +21,11 @@
   <script src="js/vendors/platform/platform.js"></script>
   <script src="js/vendors/traceur/traceur.min.js"></script>
 
+  <link rel="import" href="js/vendors/core-signals/core-signals.html">
   <link rel="import" href="js/app/wcomponents/dp-title.html">
   <link rel="import" href="js/app/wcomponents/dp-content.html">
+  <link rel="import" href="js/app/wcomponents/dp-pages-router.html">
+  <link rel="import" href="js/app/wcomponents/dp-page.html">
 
 </head>
 
@@ -34,13 +37,18 @@
       source="data/header.md"
       label="DailyPlanet"
       sublabel="A little static CMS with #ES6 (this is a POC)">
-
     </dp-title>
+    <dp-pages-router></dp-pages-router>
   </header>
 
+
   <section>
+
+    <dp-page source="data/intro.md"></dp-page>
+    <!--
     <dp-content location="intro"></dp-content>
     <dp-content location="details"></dp-content>
+    -->
     <dp-content location="backlog"></dp-content>
   </section>
 
