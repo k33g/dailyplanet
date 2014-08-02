@@ -1,0 +1,11 @@
+{
+  "name": "dailyplanet",
+  "version": "0.0.0",
+  "dependencies": {
+    "traceur": "k33g/component-traceur#master",
+    "polymer": "components/polymer#master",
+    "showdown": "k33g/component-showdown#master",
+    "highlightjs": "components/highlightjs#master",
+    "achilles": "k33g/achilles#master"
+  }
+}

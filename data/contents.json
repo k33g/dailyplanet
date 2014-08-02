@@ -1,0 +1,5 @@
+[
+  {"_id":"intro", "source":"data/intro.md", "location":"intro"},
+  {"_id":"details", "source":"data/details.md", "location":"details"},
+  {"_id":"backlog", "source":"data/backlog.md", "location":"backlog"}
+]

@@ -1,0 +1,11 @@
+{
+  "name": "showdown",
+  "version": "0.0.0",
+  "main": "./showdown.js",
+  "ignore": [
+    "node_modules",
+    "Gruntfile.js",
+    "*.json",
+    ".*"
+  ]
+}

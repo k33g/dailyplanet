@@ -1,0 +1,20 @@
+{
+  "name": "showdown",
+  "main": "./showdown.js",
+  "ignore": [
+    "node_modules",
+    "Gruntfile.js",
+    "*.json",
+    ".*"
+  ],
+  "homepage": "https://github.com/k33g/component-showdown",
+  "_release": "28948848f7",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "28948848f79962ee188592d27b2f6b8f0660b21f"
+  },
+  "_source": "git://github.com/k33g/component-showdown.git",
+  "_target": "master",
+  "_originalSource": "k33g/component-showdown"
+}

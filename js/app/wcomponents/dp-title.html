@@ -1,0 +1,18 @@
+<link rel="import" href="../../vendors/polymer/polymer.html">
+
+<polymer-element name="dp-title" attributes="label, sublabel, source">
+  <template>
+    <link rel="stylesheet" href="../../../css/dailyplanet.css">
+
+    <h1>{{label}}</h1>
+    <p>{{sublabel}}</p>
+
+    <span id="content"></span>
+  </template>
+
+  <script>
+    /* Load ES6 script */
+    System.import('js/app/wcomponents/dp-title');
+  </script>
+
+</polymer-element>

@@ -1,0 +1,17 @@
+{
+  "name": "achilles",
+  "main": "./achilles.js",
+  "ignore": [
+    "dev"
+  ],
+  "homepage": "https://github.com/k33g/achilles",
+  "_release": "414dfc0841",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "414dfc0841cfeceb0f14d5304e5df05914a42c2b"
+  },
+  "_source": "git://github.com/k33g/achilles.git",
+  "_target": "master",
+  "_originalSource": "k33g/achilles"
+}
