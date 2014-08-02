@@ -28,36 +28,36 @@
 
 <body>
 
-  <div class="wrapper">
-    <header>
-      <dp-title
-        source="data/header.md"
-        label="Daily-Planet"
-        sublabel="A little static CMS with #ES6 (this is a POC)">
+<div class="wrapper">
+  <header>
+    <dp-title
+      source="data/header.md"
+      label="Daily-Planet"
+      sublabel="A little static CMS with #ES6 (this is a POC)">
 
-        </dp-title>
-    </header>
+    </dp-title>
+  </header>
 
-    <section>
-      <dp-content location="intro"></dp-content>
-      <dp-content location="details"></dp-content>
-      <dp-content location="backlog"></dp-content>
-    </section>
+  <section>
+    <dp-content location="intro"></dp-content>
+    <dp-content location="details"></dp-content>
+    <dp-content location="backlog"></dp-content>
+  </section>
 
-    <footer>
-      <dp-content source="data/footer.md"></dp-content>
-    </footer>
+  <footer>
+    <dp-content source="data/footer.md"></dp-content>
+  </footer>
 
-  </div>
+</div>
 
-  <!--
-  <script>
-    traceur.options.experimental = true;
-  </script>
-  -->
+<!--
+<script>
+  traceur.options.experimental = true;
+</script>
+-->
 
-  <script>
-    System.import('./js/app/main');
-  </script>
+<script>
+  System.import('./js/app/main');
+</script>
 </body>
 </html>
