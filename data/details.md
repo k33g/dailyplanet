@@ -1,6 +1,6 @@
 #How to?
 
-Best way: go to [https://github.com/k33g/dailyplanet](https://github.com/k33g/dailyplanet) and read the code
+Best way: go to [https://github.com/k33g/dailyplanet](https://github.com/k33g/dailyplanet) and read the code.
 
 ##Use web component `dp-content` with path to file
 
