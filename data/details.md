@@ -1,5 +1,7 @@
 #How to?
 
+Best way: go to [https://github.com/k33g/dailyplanet](https://github.com/k33g/dailyplanet) and read the code
+
 ##Use web component `dp-content` with path to file
 
 Save your markdown file to `/data` directory and add a component in your html page like that:
