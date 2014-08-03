@@ -1,12 +1,13 @@
 {
   "name": "dailyplanet",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "traceur": "k33g/component-traceur#master",
     "showdown": "k33g/component-showdown#master",
     "highlightjs": "components/highlightjs#master",
     "achilles": "k33g/achilles#master",
     "polymer": "Polymer/polymer#~0.3.4",
-    "core-signals": "Polymer/core-signals#~0.3.4"
+    "core-signals": "Polymer/core-signals#~0.3.4",
+    "font-awesome": "components/font-awesome#master"
   }
 }

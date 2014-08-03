@@ -8,33 +8,25 @@ class Page  extends achilles.Model {
     //Getters and Setters : properties
 
     Object.defineProperty(this, "label", {
-      get: function (){ return this.get("label")} ,
-      set: function (value) { this.set("label",value); }
+      get() { return this.get("label")} ,
+      set(value) { this.set("label",value); }
     });
 
     Object.defineProperty(this, "url", {
-      get: function (){ return this.get("url")} ,
-      set: function (value) { this.set("url",value); }
+      get() { return this.get("url")} ,
+      set(value) { this.set("url",value); }
     });
 
     Object.defineProperty(this, "source", {
-      get: function (){ return this.get("source")} ,
-      set: function (value) { this.set("source",value); }
+      get() { return this.get("source")} ,
+      set(value) { this.set("source",value); }
     });
 
     Object.defineProperty(this, "id", {
-      get: function (){ return this.get("_id")} ,
-      set: function (value) { this.set("_id",value); }
+      get() { return this.get("_id")} ,
+      set (value) { this.set("_id",value); }
     });
   }
 }
 
 export default Page;
-
-/*
- [
- {"_id":"home", "label":"Home", "url":"/"},
- {"_id":"page1", "label":"Page 1", "url":"pages/page1"},
- {"_id":"page2", "label":"Page 2", "url":"pages/page2"}
- ]
- */

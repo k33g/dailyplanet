@@ -9,3 +9,13 @@ export default (selector) => {
 
   return nodes;
 }
+
+/*
+export default (selector) => {
+  var nodes = Array.from(document.querySelectorAll(selector));
+  nodes.first = () => {
+    return nodes[0];
+  }
+  return nodes
+}
+  */

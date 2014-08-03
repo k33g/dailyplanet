@@ -1,6 +1,7 @@
 export default class Router {
   constructor(properties) {
-    this.routes = []
+    this.routes = [];
+
   }
 
   add (routeTemplate, method) { /*ie: routeTemplate = "/human/{v}/ok/{v}"*/
@@ -43,7 +44,7 @@ export default class Router {
         selectedRoute.parametersValues.push(uriParts[position]);
       });
 
-      if(selectedRoute!== undefined) selectedRoute.method(selectedRoute.parametersValues);
+      selectedRoute.method(selectedRoute.parametersValues, window.location.hash);
 
       //var clonedSelectedRoute = {};
       //Object.assign(clonedSelectedRoute, selectedRoute);
@@ -51,15 +52,18 @@ export default class Router {
 
       return selectedRoute.parametersValues; /* for tests */
 
-      /*TODO: return only selectedRoute and call method on listen*/
-
     } else {
-      /*TODO: explain what to do*/
+      /* something todo */
+      return null
     }
 
   }
 
   listen () { /* add filters */
+
+    /*first time*/
+    this.match(window.location.hash.replace("#","/"));
+
     window.onpopstate = (event)=> { /*each time, JSON.stringify(event.state)*/
       this.match(window.location.hash.replace("#","/"));
     };
@@ -67,8 +71,34 @@ export default class Router {
   }
 
   stop () {
-
+    /* something todo*/
   }
 
 }
 
+/*
+ var router = new Router()
+
+ router.add("/humans/{v}", (args)=>{
+ // v == args[0]
+ })
+
+ router.add("/humans", (args)=>{
+
+ })
+
+ router.add("/humans/firstname/{v}/lastname/{v}", (args)=>{
+ console.log("some humans", args)
+ })
+
+ router.add("/", (args)=>{
+ // href="#/"
+ })
+
+ router.add("", (args, hash)=>{ //all
+ console.log("others uries", args, hash)
+ })
+
+ router.listen()
+
+*/

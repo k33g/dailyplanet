@@ -18,9 +18,7 @@ Polymer("dp-content", {
 
         this.$.content.find("pre").all().forEach((block) => {
           hljs.highlightBlock(block);
-        }).catch((error) => {
-          console.log("error", error)
-        });
+        })
       });
     }
 

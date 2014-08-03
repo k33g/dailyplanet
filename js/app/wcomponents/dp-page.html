@@ -2,23 +2,13 @@
 
 <polymer-element name="dp-page" attributes="source">
   <template>
+    <!-- subscription to router -->
     <core-signals on-core-signal-pageclicked="{{pageclickedSignal}}"></core-signals>
     <link rel="stylesheet" href="../../vendors/highlightjs/styles/github.css">
     <link rel="stylesheet" href="../../../css/dailyplanet.css">
-    <style>
-      code {
-        font-family: Monaco, Consolas, monospace, serif;
-        font-size: 13px;
-      }
-      pre {
-        padding:8px 15px;
-        background: #f8f8f8;
-        border-radius:5px;
-        border:1px solid #e5e5e5;
-        overflow-x: auto;
-      }
+    <link rel="stylesheet" href=../../vendors/font-awesome/css/font-awesome.min.css>
+    <link rel="stylesheet" href="../../../css/precode.css">
 
-    </style>
     <span id="content"></span>
   </template>
 

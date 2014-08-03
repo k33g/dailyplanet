@@ -100,6 +100,7 @@ header {
   position:fixed;
 }
 
+/*
 header ul {
   list-style:none;
   height:40px;
@@ -136,12 +137,13 @@ header ul a {
   padding-top:6px;
   height:40px;
 }
+*/
 
 strong {
   color:#222;
   font-weight:700;
 }
-
+/*
 header ul li + li {
   width:88px;
   border-left:1px solid #fff;
@@ -157,6 +159,7 @@ header ul a strong {
   display:block;
   color:#222;
 }
+*/
 
 section {
   width:500px;

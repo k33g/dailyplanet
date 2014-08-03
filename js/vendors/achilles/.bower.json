@@ -5,11 +5,11 @@
     "dev"
   ],
   "homepage": "https://github.com/k33g/achilles",
-  "_release": "414dfc0841",
+  "_release": "95f6953c54",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "414dfc0841cfeceb0f14d5304e5df05914a42c2b"
+    "commit": "95f6953c54b15720bfeabc0d390c6c6a3729badd"
   },
   "_source": "git://github.com/k33g/achilles.git",
   "_target": "master",

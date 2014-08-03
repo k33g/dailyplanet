@@ -21,7 +21,7 @@ Polymer("dp-page", {
 
     this.converter = new Showdown.converter();
 
-    if (this.source !== null) {
+    if (this.source !== null && window.location.hash.length == 0) {
       this.loadContent(this.source);
     }
 
