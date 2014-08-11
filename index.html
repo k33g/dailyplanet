@@ -58,7 +58,7 @@
 -->
 
 <script>
-  System.import('./js/app/main');
+  System.import('./js/app/main').catch(function(error) { console.log(error); });
 </script>
 </body>
 </html>
